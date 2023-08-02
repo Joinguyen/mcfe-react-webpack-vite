@@ -1,0 +1,49 @@
+.comment_order {
+  display: flex;
+  align-content: center;
+  padding: 4px 0;
+  margin-bottom: 16px;
+
+  li:not(:last-child) {
+    display: flex;
+    align-items: center;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+
+  li label {
+    font-weight: 700;
+    font-size: 12px;
+    color: #afb8c3;
+  }
+
+  li input[type="radio"]:checked + label {
+    color: #ff2eab;
+  }
+
+  li:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 8px;
+    margin: 0 10px;
+    background: #f0f2f4;
+  }
+}
+
+.see_more_reply_btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333d4b;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  margin-bottom: 12px;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,89 @@
+.new_comment {
+  display: flex;
+  margin-bottom: 12px;
+
+  .comment_user_img img {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    border-radius: 50%;
+  }
+
+  .comment_right {
+    width: 100%;
+
+    .comment_info {
+      display: flex;
+      justify-content: space-between;
+      margin: 4px 0;
+
+      p {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+
+        .writer_chip {
+          line-height: 16px;
+          padding: 3px 7px;
+          margin-left: 4px;
+          border-radius: 10px;
+          text-align: center;
+          font-family: "Roboto";
+          font-weight: 700;
+          font-size: 8px;
+          white-space: nowrap;
+          background-color: rgb(255, 151, 213);
+          color: rgb(255, 255, 255);
+        }
+
+        .comment_time {
+          display: block;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 20px;
+          color: #afb8c3;
+        }
+      }
+    }
+
+    .comment_text {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 4px;
+      word-break: break-word;
+    }
+
+    .comment_activity {
+      display: flex;
+      align-items: center;
+
+      .comment_replay {
+        font-weight: 700;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.child_comment {
+  padding-left: 60px;
+  .comment_user_img img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.deleted_comment {
+  font-size: 14px;
+  line-height: 24px;
+  color: #afb8c3;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+  }
+}

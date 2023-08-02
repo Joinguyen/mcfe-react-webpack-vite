@@ -1,0 +1,30 @@
+@import "/src/variables.scss";
+
+.floating_btn_wrap {
+  position: fixed;
+  bottom: 16px;
+  bottom: 80px;
+  right: 16px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.floating_scroll_top_btn {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(127.98deg, #ff82cd 12.3%, #ffc79a 87.28%);
+  box-shadow: 0px 8px 16px rgba(51, 61, 75, 0.16);
+  border-radius: 50%;
+  margin-bottom: 8px;
+  z-index: 1;
+}
+
+.floating_write_btn {
+  width: 52px;
+  height: 52px;
+  background-color: $color-primary-01;
+  box-shadow: 0px 8px 16px rgba(51, 61, 75, 0.16);
+  border-radius: 50%;
+  z-index: 3;
+}

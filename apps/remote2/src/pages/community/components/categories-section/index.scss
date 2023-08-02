@@ -1,0 +1,52 @@
+@import "/src/variables.scss";
+
+.categories_section {
+  height: 64px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+  .filter_adjustment {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    margin-right: 8px;
+  }
+
+  .filter_category_list {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    -ms-overflow-style: none; //IE and Edge
+    scrollbar-width: none; //firefox
+    &::-webkit-scrollbar {
+      display: none; //Chrome, safari, opera
+    }
+
+    li {
+      margin-right: 8px;
+      input[type="radio"] {
+        display: none;
+      }
+
+      input[type="radio"]:checked + label {
+        border: 2px solid $color-primary-01;
+        color: $color-primary-01;
+      }
+
+      label {
+        display: block;
+        height: 44px;
+        padding: 13px 20px;
+        white-space: nowrap;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 8px;
+        border: 2px solid transparent;
+        color: #afb8c3;
+      }
+    }
+  }
+}

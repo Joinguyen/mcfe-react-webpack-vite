@@ -1,0 +1,1 @@
+export type TSX_Element_Type = string | JSX.Element | JSX.Element[];

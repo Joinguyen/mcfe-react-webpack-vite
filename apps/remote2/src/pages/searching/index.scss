@@ -1,0 +1,33 @@
+@import "/src/variables.scss";
+
+.searching-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .main {
+    margin-top: $header_height;
+
+    .searchbar_container {
+      padding: 10px 16px;
+      margin-bottom: 10px;
+      position: relative;
+
+      input {
+        width: 100%;
+        height: 44px;
+        padding: 0 50px 0 16px;
+        background: $color-grey-11;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        right: 32px;
+      }
+    }
+  }
+}

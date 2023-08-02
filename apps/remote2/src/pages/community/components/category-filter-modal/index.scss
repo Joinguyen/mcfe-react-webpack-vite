@@ -1,0 +1,42 @@
+@import "/src/variables.scss";
+
+.modal_content_filter {
+  height: 40vh;
+  max-height: 360px;
+  overflow-y: scroll;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"]:checked ~ label span {
+      background-image: url("/src/assets/icons/category_checked.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    label {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      max-width: 400px;
+      margin: 0 auto;
+
+      span {
+        width: 24px;
+        height: 24px;
+        background: $color-primary-11;
+        border-radius: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.empty_data_container {
+  padding: 90px 0;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 24px;
+  }
+
+  div {
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  p:first-child {
+    margin-bottom: 8px;
+  }
+}

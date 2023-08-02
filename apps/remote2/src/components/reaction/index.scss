@@ -1,0 +1,68 @@
+@import "/src/variables.scss";
+
+.thumb_btn {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  margin-right: 10px;
+  position: relative;
+
+  .thumb_img {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .thumb_text {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #afb8c3;
+  }
+}
+
+.active_post {
+  // margin-right: 0;
+
+  .thumb_img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .thumb_btn.active_post .thumb_text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.active_pressed {
+  .thumb_text {
+    color: $color-primary-01;
+  }
+}
+/* 
+.post_reaction_btn {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+
+  .post_reaction_img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .post_reaction_text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Pretendard";
+    color: #afb8c3;
+  }
+}
+ */

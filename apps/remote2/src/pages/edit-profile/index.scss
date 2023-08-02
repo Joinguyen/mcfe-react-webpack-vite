@@ -1,0 +1,46 @@
+@import "/src/variables.scss";
+
+.edit_profile_container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .profile_img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 24px;
+    position: relative;
+
+    button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .profile_img > img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #f0f2f4;
+    border-radius: 50%;
+  }
+}
+
+.nickname_box {
+  width: 100%;
+  padding: 10px 16px;
+  background: $color-grey-11;
+  border-radius: 8px;
+
+  p {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+
+  input {
+    width: 100%;
+  }
+}

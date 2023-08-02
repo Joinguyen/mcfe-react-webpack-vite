@@ -19,7 +19,7 @@
         "styles": ["apps/remote2/src/styles.scss"],
         "scripts": [],
         "isolatedConfig": true,
-        "webpackConfig": "apps/remote2/webpack.config.js"
+        "webpackConfig": "apps/remote2/webpack.config.cjs"
       },
       "configurations": {
         "development": {

@@ -1,0 +1,140 @@
+.comment_write {
+  padding: 16px;
+  background-color: #fff;
+  border-top: 1px solid #f0f2f4;
+  position: relative;
+
+  div {
+    padding: 0 16px;
+    background: #f9fafb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  textarea {
+    width: 100%;
+    resize: none;
+    height: 44px;
+    padding: 10px 0;
+    max-height: 92px;
+  }
+
+  button {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    .emoticon_btn {
+      min-width: 24px;
+      min-height: 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.comment_emoticon {
+  background: #fff;
+}
+
+.emoticon_filter {
+  border-top: 1px solid #f0f2f4;
+  border-bottom: 1px solid #f0f2f4;
+  height: 44px;
+
+  ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  li {
+    min-width: 44px;
+    height: 100%;
+    padding: 4px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      display: block;
+      -o-object-fit: contain;
+      object-fit: contain;
+      filter: grayscale(100%);
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  li.active div {
+    background: #f0f2f4;
+    border-radius: 4px;
+    img {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.emoticon_container {
+  height: 270px;
+  overflow-y: scroll;
+
+  ul {
+    max-width: 512px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+
+  li {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 70px;
+      height: 70px;
+      display: block;
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+  }
+}
+
+.emoticon_preview {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 0 !important;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 122px !important;
+
+  button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+  }
+
+  & > img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 16px auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
